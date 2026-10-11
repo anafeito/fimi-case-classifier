@@ -1,0 +1,14 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+      - name: STIX bundle validates with stix2
+        run: python -c "import json, stix2; stix2.parse(json.load(open('examples/stix_bundle_sample.json')), allow_custom=True); print('ok')"
