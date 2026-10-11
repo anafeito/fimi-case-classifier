@@ -1,0 +1,3652 @@
+{
+  "type": "bundle",
+  "id": "bundle--6c86bff0-2209-5ae2-9f44-070b37e8911f",
+  "objects": [
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "type": "identity",
+      "id": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "name": "FIMI Case Classifier",
+      "identity_class": "system",
+      "description": "Open-source NLP pipeline that classifies EUvsDisinfo cases by narrative and target country and suggests DISARM techniques. Machine-generated; requires analyst review."
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "threat-actor",
+      "id": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "name": "Pro-Kremlin disinformation ecosystem",
+      "description": "Aggregate actor for outlets whose content EUvsDisinfo (EEAS East StratCom Task Force) documented as pro-Kremlin disinformation. Attribution is EUvsDisinfo's, not this tool's.",
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/disinformation-cases/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+      "name": "Distort",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0076",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0076.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "plan-objectives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--a0ffac1c-bb0b-54c9-99bc-57ee81426c11",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--050feba9-2a8f-573b-b5f2-0d2dc2bd21a5",
+      "name": "Reframe Context",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0023.001",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0023.001.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "develop-content"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--2675dda4-9353-5926-9be1-d0ef50774611",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--050feba9-2a8f-573b-b5f2-0d2dc2bd21a5"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+      "name": "Distort Facts",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0023",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0023.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "develop-content"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--c9111209-942d-5e53-b122-728264f193b9",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+      "name": "Facilitate State Propaganda",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0002",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0002.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "plan-objectives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--e09949a5-4890-5a88-808e-08ebb28a1937",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--72f399f9-e2f3-5a34-86e7-d973d5d04c51",
+      "name": "Deceptively Labelled or Translated",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0084.003",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0084.003.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "develop-content"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--d7b80d2e-a040-5c6b-86de-3524170731d7",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--72f399f9-e2f3-5a34-86e7-d973d5d04c51"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+      "name": "Ukraine",
+      "country": "UA"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--5e30d2b9-242c-5740-b187-91d3fcb30938",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--46201d73-2a8a-5587-8e78-c73c90a9610f"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--de07832f-0bad-5700-9d13-cd88c59e3a7f",
+      "name": "Belarus",
+      "country": "BY"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--267ce589-58a7-5e26-94de-f019f1884494",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--de07832f-0bad-5700-9d13-cd88c59e3a7f"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--fe4c96fd-0e34-551f-9c4e-5c782bf89a57",
+      "name": "politnavigator.net",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--dfdaeeca-e223-512c-94cd-4a913ad32e71",
+      "value": "https://euvsdisinfo.eu/report/chairman-of-the-verkhovna-rada-admitted-that-kyiv-will-not-implement-the-minsk-agreements/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--f65bd9e5-6d45-50f8-9bd1-18c226599974",
+      "name": "Chairman of the Verkhovna Rada admitted that Kyiv will not implement the Minsk agreements",
+      "description": "The chairman of the Verkhovna Rada admitted that Kyiv is not going to implement the Minsk agreements. The Verkhovna Rada will not make any changes to the Constitution of Ukraine on the proposal of other countries, even if it is foreseen by the Minsk agreements and is necessary to end the war in Donbas. This was stated by Chairman of the Ukrainian parliament Dmitro Razumkov during a press conference. The head of the Rada replied that adding amendments, which are envisaged by the Minsk agreements, to the fundamental law of Ukraine is not even a subject to discussion.",
+      "published": "2020-07-20T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:'Civil war' in Ukraine & legitimacy of annexation"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--050feba9-2a8f-573b-b5f2-0d2dc2bd21a5",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--72f399f9-e2f3-5a34-86e7-d973d5d04c51",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "location--de07832f-0bad-5700-9d13-cd88c59e3a7f",
+        "identity--fe4c96fd-0e34-551f-9c4e-5c782bf89a57",
+        "url--dfdaeeca-e223-512c-94cd-4a913ad32e71",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "chairman-of-the-verkhovna-rada-admitted-that-kyiv-will-not-implement-the-minsk-agreements",
+      "x_fimi_narratives": [
+        {
+          "id": "N15",
+          "name": "'Civil war' in Ukraine & legitimacy of annexation",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "UA",
+        "BY"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N15 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0023.001",
+          "name": "Reframe Context",
+          "tactic_id": "TA06",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N15"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0084.003",
+          "name": "Deceptively Labelled or Translated",
+          "tactic_id": "TA06",
+          "confidence": 0.35,
+          "reasons": [
+            "cue: claimed admission ('admitted')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/chairman-of-the-verkhovna-rada-admitted-that-kyiv-will-not-implement-the-minsk-agreements/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+      "name": "Leverage Existing Narratives",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0003",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0003.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "develop-narratives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--69d609c7-5cc3-5cf6-9a56-e917186e9adb",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--c2a5e11f-45b9-5ded-a542-ff52dbdc9b40",
+      "name": "Divide",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0079",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0079.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "plan-objectives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--f0175ed6-7486-51bc-b857-b10c9c9217c6",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--c2a5e11f-45b9-5ded-a542-ff52dbdc9b40"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+      "name": "United States",
+      "country": "US"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--be7bb570-af20-5b73-b634-8f5b6b86f5ce",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--a0924d44-e52c-5942-bc65-da7c2fa2db45",
+      "name": "News Front - Russian",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--f9fbe162-129d-56c7-9762-db0da1abd23a",
+      "name": "Sputnik Uzbekistan - Russian",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--b534525a-9278-5b12-8759-f1b9f7c45adf",
+      "value": "https://euvsdisinfo.eu/report/joe-biden-is-preparing-a-coup-detat-in-the-united-states/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--1ee47db6-5f7c-5bca-b8f9-18208c2f1b40",
+      "name": "Clinton and Biden are preparing a coup d'etat in the United States",
+      "description": "Hillary Clinton and Joe Biden are preparing a coup d’etat in the United States. // Here we are talking about the forceful elimination of political opponents, as well as members of their families and ordinary supporters of the Republican Party, who will not accept usurpation of power by Clinton. The coup will be covered up with another portion of anti-Russian rhetoric, and hatred towards supporters of Trump. Ukrainian scenario might repeat already not in Kyiv, but in Washington. Group of “unknown snipers” to create a “democratic heavenly hundred” will be easily found by the American directors of color revolutions, that is not a problem. — The electoral drama may turn into a real bloody tragedy.",
+      "published": "2020-07-19T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Ukraine as Nazi, illegitimate or failed state"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--c2a5e11f-45b9-5ded-a542-ff52dbdc9b40",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "identity--a0924d44-e52c-5942-bc65-da7c2fa2db45",
+        "identity--f9fbe162-129d-56c7-9762-db0da1abd23a",
+        "url--b534525a-9278-5b12-8759-f1b9f7c45adf",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "joe-biden-is-preparing-a-coup-detat-in-the-united-states",
+      "x_fimi_narratives": [
+        {
+          "id": "N02",
+          "name": "Ukraine as Nazi, illegitimate or failed state",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "US",
+        "UA"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N02 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0003",
+          "name": "Leverage Existing Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N02"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0079",
+          "name": "Divide",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "cue: wedge / division language ('hatred')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/joe-biden-is-preparing-a-coup-detat-in-the-united-states/"
+        }
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--9adfc8bf-7159-5dab-ae6f-0bb9008413e9",
+      "value": "https://euvsdisinfo.eu/report/civil-war-begins-in-the-usa/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--cdcfe7a3-a5aa-522d-bf27-e94272495e83",
+      "name": "Second civil war began in the USA",
+      "description": "America has lost its landmarks, and a country that has lost its landmarks begins to distort and destroy its past. The second Civil War in the United States actually began.",
+      "published": "2020-07-19T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:'Civil war' in Ukraine & legitimacy of annexation"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--050feba9-2a8f-573b-b5f2-0d2dc2bd21a5",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--c2a5e11f-45b9-5ded-a542-ff52dbdc9b40",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "identity--a0924d44-e52c-5942-bc65-da7c2fa2db45",
+        "url--9adfc8bf-7159-5dab-ae6f-0bb9008413e9",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "civil-war-begins-in-the-usa",
+      "x_fimi_narratives": [
+        {
+          "id": "N15",
+          "name": "'Civil war' in Ukraine & legitimacy of annexation",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "US"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N15 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0023.001",
+          "name": "Reframe Context",
+          "tactic_id": "TA06",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N15"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0079",
+          "name": "Divide",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "cue: wedge / division language ('civil war')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/civil-war-begins-in-the-usa/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9",
+      "name": "Amplify Existing Conspiracy Theory Narratives",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0022.001",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0022.001.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "develop-narratives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--a527967b-dfaa-5f88-83b7-814be0ffbbb4",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+      "name": "Dismiss",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0075",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0075.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "plan-objectives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--3eca76bc-9543-5c31-8dc7-3d7f295bca63",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--8b660ce1-73a3-5190-be97-495b7609211a",
+      "name": "Poland",
+      "country": "PL"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--1b04bafb-d39e-5bf2-a61e-bcc49069ff9d",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--8b660ce1-73a3-5190-be97-495b7609211a"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--51c3433f-90f0-5f1c-bd3a-785950b9a916",
+      "name": "Berestje News",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--b1e45638-c4f2-5c65-9cbe-ccd39b02eefd",
+      "value": "https://euvsdisinfo.eu/report/polish-catholics-interfere-in-belaruss-affairs-catholics-should-be-converted-to-orthodox-christianity/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--a7e48266-92b4-5c9d-9b95-13c5140cfd7c",
+      "name": "Polish Catholics interfere in Belarus's affairs, Catholics should be converted to Orthodox Christianity",
+      "description": "Poland interferes in the Belarusian presidential elections through Catholics. Polish Catholics try to initiate riots and mass protests in Belarus. They initiated a campaign against electoral fraud, likely thanks to the US State Department money. The Western security bodies have long time ago bought off all Catholic institutions. All Catholics are controlled by Uncle Sam. Earlier similar policies were conducted by the Orthodox Autocephalous Church. Half of Catholic priests in Belarus come from Poland. They are governed by the rules imposed from outside Belarus, but Belarusian Catholics are under their bad influence. They need to be saved, including through conversion into Orthodox Christianity, which has the truth, God, and God-elected president, not an agent of Western security bodies.",
+      "published": "2020-07-19T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Colour revolutions & orchestrated protests"
+      ],
+      "confidence": 59,
+      "object_refs": [
+        "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9",
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--de07832f-0bad-5700-9d13-cd88c59e3a7f",
+        "location--8b660ce1-73a3-5190-be97-495b7609211a",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "identity--51c3433f-90f0-5f1c-bd3a-785950b9a916",
+        "url--b1e45638-c4f2-5c65-9cbe-ccd39b02eefd",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "polish-catholics-interfere-in-belaruss-affairs-catholics-should-be-converted-to-orthodox-christianity",
+      "x_fimi_narratives": [
+        {
+          "id": "N09",
+          "name": "Colour revolutions & orchestrated protests",
+          "confidence": 0.587
+        }
+      ],
+      "x_fimi_target_countries": [
+        "BY",
+        "PL",
+        "US"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0022.001",
+          "name": "Amplify Existing Conspiracy Theory Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.81,
+          "reasons": [
+            "narrative N09",
+            "cue: hidden-plot framing ('controlled by')"
+          ]
+        },
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.63,
+          "reasons": [
+            "narrative N09 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/polish-catholics-interfere-in-belaruss-affairs-catholics-should-be-converted-to-orthodox-christianity/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--9abf7ea0-36bc-5eca-a06c-67c51398b9bd",
+      "name": "Sputnik Poland",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--cb5c9f98-7987-51c8-afb0-f19316d2ee2e",
+      "value": "https://euvsdisinfo.eu/report/two-largest-polish-parties-and-the-political-officers-from-the-institute-of-national-remembrance-falsify-the-history-of-wwii/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--070e4927-8eec-5b05-a81a-e2197908fba1",
+      "name": "Polish parties and “political officers” from Institute of National Remembrance falsify history of WWII",
+      "description": "81% of the Russians believe that in 1945, “the Red Army liberated Poland, saving the Poles from extermination by the cost of the lives of the Soviet soldiers”. The Poles had similar attitudes before the PiS, the PO, and, especially, the political officers from the Institute of National Remembrance, started to falsify history. // New survey commissioned by The Center for Polish-Russian Dialogue and Understanding serves, like other centre’s publications, to scare Russia, and now also Russians.",
+      "published": "2020-07-18T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Historical revisionism"
+      ],
+      "confidence": 94,
+      "object_refs": [
+        "attack-pattern--050feba9-2a8f-573b-b5f2-0d2dc2bd21a5",
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--8b660ce1-73a3-5190-be97-495b7609211a",
+        "identity--9abf7ea0-36bc-5eca-a06c-67c51398b9bd",
+        "url--cb5c9f98-7987-51c8-afb0-f19316d2ee2e",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "two-largest-polish-parties-and-the-political-officers-from-the-institute-of-national-remembrance-falsify-the-history-of-",
+      "x_fimi_narratives": [
+        {
+          "id": "N10",
+          "name": "Historical revisionism",
+          "confidence": 0.938
+        }
+      ],
+      "x_fimi_target_countries": [
+        "PL"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0023.001",
+          "name": "Reframe Context",
+          "tactic_id": "TA06",
+          "confidence": 0.85,
+          "reasons": [
+            "narrative N10",
+            "cue: historical reframing ('WWII')"
+          ]
+        },
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N10 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0003",
+          "name": "Leverage Existing Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N10"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/two-largest-polish-parties-and-the-political-officers-from-the-institute-of-national-remembrance-falsify-the-history-of-wwii/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+      "name": "Demand Insurmountable Proof",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0040",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0040.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "develop-narratives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--d3f1e27e-01fa-5f26-a4dd-f2eca12e4872",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--43cd1d8d-45c5-5e05-8616-ce4da35e932b",
+      "name": "Respond to Breaking News Event or Active Crisis",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0068",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0068.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "develop-narratives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--399a9b69-31ca-5a40-afa5-39df5a1119cb",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--43cd1d8d-45c5-5e05-8616-ce4da35e932b"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--a22d97e7-5067-5adc-b2e7-8194147cb7a1",
+      "name": "Sputnik English",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--3dee37b1-329b-5db6-be1f-6b1e4a577ed2",
+      "value": "https://euvsdisinfo.eu/report/no-evidence-of-russian-meddling-in-2016-us-presidential-election-2/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--42eb6f6f-6479-5ea5-830d-cd1023948eeb",
+      "name": "No evidence of Russian meddling in 2016 US presidential election",
+      "description": "In 2016, the US pushed claims that Moscow had “meddled” in the nation’s presidential elections, alleging that “Russian hackers” broke into the Democratic National Committee’s servers. Additionally, US President Donald Trump was later accused of “collusion” with Russia – an allegation later probed by Special Counsel Robert Mueller. However, the latter’s report said that insufficient evidence was found to support the claims. Russia, for its part, vehemently denied any interference in the US elections, calling the accusations part of the “domestic political struggle”.",
+      "published": "2020-07-18T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--43cd1d8d-45c5-5e05-8616-ce4da35e932b",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "identity--a22d97e7-5067-5adc-b2e7-8194147cb7a1",
+        "url--3dee37b1-329b-5db6-be1f-6b1e4a577ed2",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "no-evidence-of-russian-meddling-in-2016-us-presidential-election-2",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "US"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.92,
+          "reasons": [
+            "narrative N03",
+            "cue: demands proof / 'no evidence' ('No evidence')"
+          ]
+        },
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0068",
+          "name": "Respond to Breaking News Event or Active Crisis",
+          "tactic_id": "TA14",
+          "confidence": 0.45,
+          "reasons": [
+            "cue: exploits breaking news / crisis ('election')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/no-evidence-of-russian-meddling-in-2016-us-presidential-election-2/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--8a583cd1-fd1b-53a1-8c14-535885b4fcd1",
+      "name": "mejdurecie.md",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--7d543e8d-ba51-59a1-b828-424e93723101",
+      "value": "https://euvsdisinfo.eu/report/george-soros-destabilized-many-european-countries-by-funding-ngos/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--6523893d-5220-56d0-9f0e-ce25866c3c5f",
+      "name": "George Soros destabilized many European countries by funding NGOs",
+      "description": "Funding NGOs explains how a man, who calls himself a “philanthropist” [George Soros], managed to destabilise many European countries through his organisations and used European judges committed to his cause.",
+      "published": "2020-07-17T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Colour revolutions & orchestrated protests",
+        "narrative:Global elites & hidden puppet masters"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9",
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "identity--8a583cd1-fd1b-53a1-8c14-535885b4fcd1",
+        "url--7d543e8d-ba51-59a1-b828-424e93723101",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "george-soros-destabilized-many-european-countries-by-funding-ngos",
+      "x_fimi_narratives": [
+        {
+          "id": "N09",
+          "name": "Colour revolutions & orchestrated protests",
+          "confidence": 0.95
+        },
+        {
+          "id": "N08",
+          "name": "Global elites & hidden puppet masters",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "US"
+      ],
+      "x_fimi_target_orgs": [
+        "EU"
+      ],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0022.001",
+          "name": "Amplify Existing Conspiracy Theory Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.93,
+          "reasons": [
+            "narrative N09",
+            "narrative N08"
+          ]
+        },
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N09 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N08 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/george-soros-destabilized-many-european-countries-by-funding-ngos/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--33c98140-fa80-5a34-a55a-9e11f09d5d9c",
+      "name": "Netherlands",
+      "country": "NL"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--cb646a6c-4e8d-585a-8640-8c7817286364",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--33c98140-fa80-5a34-a55a-9e11f09d5d9c"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--3209419e-587a-5a89-a9d1-3c911f3fafe0",
+      "name": "Malaysia",
+      "country": "MY"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--58ecd84e-ecda-5832-8e2d-7346e29da259",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--3209419e-587a-5a89-a9d1-3c911f3fafe0"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--abe9ecae-8faf-508e-a3cd-59304c3a10a5",
+      "name": "novorosinform.org",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--e484df83-4c5f-56f0-9e42-7a8e53dc3cc5",
+      "value": "https://euvsdisinfo.eu/report/mh17-jit-did-not-provide-any-real-evidence-the-investigation-is-built-on-speculation/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--fd304258-e91a-597e-84cb-f6c531d5aa9e",
+      "name": "MH17: JIT did not provide any real evidence",
+      "description": "There is no clear evidence, only general statements. The [MH17] case is based on speculation, and even these data are only partially presented. I would like to emphasise: US satellites were monitoring Donbas. Six years have passed, but the investigation has hardly moved forward. If there were real evidence, they would have been presented long ago. At the same time, the process is now based on speculation, on data that can be interpreted in different ways.",
+      "published": "2020-07-17T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "location--33c98140-fa80-5a34-a55a-9e11f09d5d9c",
+        "location--3209419e-587a-5a89-a9d1-3c911f3fafe0",
+        "identity--abe9ecae-8faf-508e-a3cd-59304c3a10a5",
+        "url--e484df83-4c5f-56f0-9e42-7a8e53dc3cc5",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "mh17-jit-did-not-provide-any-real-evidence-the-investigation-is-built-on-speculation",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "US",
+        "UA",
+        "NL",
+        "MY"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N03"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/mh17-jit-did-not-provide-any-real-evidence-the-investigation-is-built-on-speculation/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--bcc57f2a-f7dc-5e04-b221-36e991999389",
+      "name": "Syria",
+      "country": "SY"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--2eefcf37-e8b8-5967-aef7-a07e7ad67368",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--bcc57f2a-f7dc-5e04-b221-36e991999389"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--0dbd8480-0ce7-53a7-b827-e5e0782f7fac",
+      "name": "RT English",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--dfc1f2dc-e4c0-56da-a1ac-af778a00808d",
+      "value": "https://euvsdisinfo.eu/report/terrorist-linked-white-helmets-stage-false-flag-chemical-attacks-in-syria/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--0cd79c02-1118-5e86-a784-d2454fa77f87",
+      "name": "Terrorist-linked White Helmets stage false-flag chemical attacks in Syria",
+      "description": "Despite being hailed as fearless rescue workers, the White Helmets have been accused of partnering with Al-Qaeda. Operating exclusively in rebel-held territory, the group’s members have been photographed posing with jihadists and have been accused of staging chemical weapons attacks to draw in Western forces against Syrian President Bashar Assad.",
+      "published": "2020-07-17T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:The West sponsors terrorism",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "location--bcc57f2a-f7dc-5e04-b221-36e991999389",
+        "identity--0dbd8480-0ce7-53a7-b827-e5e0782f7fac",
+        "url--dfc1f2dc-e4c0-56da-a1ac-af778a00808d",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "terrorist-linked-white-helmets-stage-false-flag-chemical-attacks-in-syria",
+      "x_fimi_narratives": [
+        {
+          "id": "N17",
+          "name": "The West sponsors terrorism",
+          "confidence": 0.95
+        },
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.36
+        }
+      ],
+      "x_fimi_target_countries": [
+        "SY"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N17 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0003",
+          "name": "Leverage Existing Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N17"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.54,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.49,
+          "reasons": [
+            "narrative N03"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/terrorist-linked-white-helmets-stage-false-flag-chemical-attacks-in-syria/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--e1ee6219-a24c-5cdc-824f-e48ef02e89aa",
+      "name": "Dismay",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0078",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0078.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "plan-objectives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--0415ce99-0c93-503b-a7fb-43d989242100",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--e1ee6219-a24c-5cdc-824f-e48ef02e89aa"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--d5be68c4-ab7a-523e-81e7-7af1bbcd3e4f",
+      "name": "Georgia",
+      "country": "GE"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--faddd0d5-8574-509a-a2f5-9f29c3b9e035",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--d5be68c4-ab7a-523e-81e7-7af1bbcd3e4f"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--35dd4323-b451-5d2e-a0b0-3013e807ebbb",
+      "name": "Sputnik South-Ossetia",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--79091f25-97b1-5290-bdf8-79864672b2a2",
+      "value": "https://euvsdisinfo.eu/report/georgian-citizen-detained-near-the-border-wanted-to-get-bats-from-south-ossetia-for-the-lugar-lab/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--a084653e-8ccd-5ef9-af1f-604e3b1e0c23",
+      "name": "Georgian citizen wanted to get bats from South Ossetia for the Lugar Lab",
+      "description": "Georgian citizen who was detained by the South Ossetian border guard has admitted that he wanted to get bats from South Ossetia for the Lugar laboratory. Lugar laboratory is a real threat to the life and health not only for citizens of South Ossetia and the population of Georgia, but it also carries a danger to countries of the entire Caucasus region. A lot has been written about the experiments and developments of this laboratory, including by the well-known Georgian general Igor Giorgadze who revealed this problem in great detail and who cannot be suspected of bias. There are special vehicles of a certain purpose near the borders of South Ossetia that could be involved in collecting biological material from citizens of South Ossetia.",
+      "published": "2020-07-17T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Biolabs, health & bioweapon conspiracies"
+      ],
+      "confidence": 35,
+      "object_refs": [
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--e1ee6219-a24c-5cdc-824f-e48ef02e89aa",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9",
+        "attack-pattern--72f399f9-e2f3-5a34-86e7-d973d5d04c51",
+        "location--d5be68c4-ab7a-523e-81e7-7af1bbcd3e4f",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "identity--35dd4323-b451-5d2e-a0b0-3013e807ebbb",
+        "url--79091f25-97b1-5290-bdf8-79864672b2a2",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "georgian-citizen-detained-near-the-border-wanted-to-get-bats-from-south-ossetia-for-the-lugar-lab",
+      "x_fimi_narratives": [
+        {
+          "id": "N07",
+          "name": "Biolabs, health & bioweapon conspiracies",
+          "confidence": 0.353
+        }
+      ],
+      "x_fimi_target_countries": [
+        "GE",
+        "US"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0078",
+          "name": "Dismay",
+          "tactic_id": "TA02",
+          "confidence": 0.54,
+          "reasons": [
+            "narrative N07 -> objective 'dismay'"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0022.001",
+          "name": "Amplify Existing Conspiracy Theory Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.49,
+          "reasons": [
+            "narrative N07"
+          ]
+        },
+        {
+          "technique_id": "T0084.003",
+          "name": "Deceptively Labelled or Translated",
+          "tactic_id": "TA06",
+          "confidence": 0.35,
+          "reasons": [
+            "cue: claimed admission ('admitted')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/georgian-citizen-detained-near-the-border-wanted-to-get-bats-from-south-ossetia-for-the-lugar-lab/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--dc97b4b4-a015-5696-ac92-89e797286772",
+      "name": "Use Fake Experts",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0045",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0045.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "conduct-pump-priming"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--4f7ed8f1-dc0f-57d0-a9b3-48baf1c69a66",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--dc97b4b4-a015-5696-ac92-89e797286772"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--a78c83d9-2790-5b85-a9ff-759637cbb674",
+      "name": "Australia",
+      "country": "AU"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--b71d3754-64f2-5fc0-beb0-f49039d19931",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--a78c83d9-2790-5b85-a9ff-759637cbb674"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--a93346be-e54d-5d02-9fc1-6e120d92fda2",
+      "name": "Sputnik Germany",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--9a302af3-d755-559f-ba8a-9452017fa2e9",
+      "value": "https://euvsdisinfo.eu/report/mh17-tribunal-seems-to-be-aimed-at-the-previously-established-guilt-of-russian-officials/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--58b30901-47b9-5277-80f6-7f34d631f5cb",
+      "name": "MH17 tribunal aimed at the previously established guilt of Russian officials",
+      "description": "Alternative explanations for the MH17 disaster are reportedly not yet relevant to the trial, not for the prosecutors anyway, but hardly for the judges either. Everything seems to be geared towards the previously established guilt of Russian officials. The Dutch political scientist Kees van der Pijl, author of the book “The Shotdown – Flight MH17, Ukraine and the New Cold War” had warned against a “show trial” because of this line that had been made clear beforehand, which only wanted to prove the alleged Russian guilt. (…) The trial remains inconclusive and no real evidence of the defendants’ guilt and Russia’s alleged responsibility has yet been presented.",
+      "published": "2020-07-17T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--e1ee6219-a24c-5cdc-824f-e48ef02e89aa",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--dc97b4b4-a015-5696-ac92-89e797286772",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "location--33c98140-fa80-5a34-a55a-9e11f09d5d9c",
+        "location--3209419e-587a-5a89-a9d1-3c911f3fafe0",
+        "location--a78c83d9-2790-5b85-a9ff-759637cbb674",
+        "identity--a93346be-e54d-5d02-9fc1-6e120d92fda2",
+        "url--9a302af3-d755-559f-ba8a-9452017fa2e9",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "mh17-tribunal-seems-to-be-aimed-at-the-previously-established-guilt-of-russian-officials",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "UA",
+        "NL",
+        "MY",
+        "AU"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N03"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0078",
+          "name": "Dismay",
+          "tactic_id": "TA02",
+          "confidence": 0.55,
+          "reasons": [
+            "cue: fear / dismay language ('disaster')"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0045",
+          "name": "Use Fake Experts",
+          "tactic_id": "TA08",
+          "confidence": 0.4,
+          "reasons": [
+            "cue: appeal to (unnamed) experts ('political scientist')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/mh17-tribunal-seems-to-be-aimed-at-the-previously-established-guilt-of-russian-officials/"
+        }
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--7bee5670-b01a-5c1e-8bd9-26f09af14354",
+      "value": "https://euvsdisinfo.eu/report/there-is-no-evidence-that-mh17-was-shot-by-a-russian-buk-missile/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--c71e7698-96f8-5e55-a137-27ae994564ac",
+      "name": "There is no evidence that MH17 was shot by a Russian BUK missile",
+      "description": "On 17 July 2014, a Boeing 777 passenger plane belonging to Malaysia Airlines crashed over eastern Ukraine. All 298 passengers of the aircraft with the identification MH17 were killed. The suspicion was quickly voiced that East Ukrainian rebels had shot down the aircraft with a BUK anti-aircraft missile. The missile is said to have come from Russia. There is still no legally binding evidence of this, but Dutch security authorities and international investigators are convinced of this version. On this basis, a criminal case against four defendants was started in Amsterdam at the beginning of March and is currently continuing with interruptions.",
+      "published": "2020-07-17T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "location--33c98140-fa80-5a34-a55a-9e11f09d5d9c",
+        "location--3209419e-587a-5a89-a9d1-3c911f3fafe0",
+        "location--a78c83d9-2790-5b85-a9ff-759637cbb674",
+        "identity--a93346be-e54d-5d02-9fc1-6e120d92fda2",
+        "url--7bee5670-b01a-5c1e-8bd9-26f09af14354",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "there-is-no-evidence-that-mh17-was-shot-by-a-russian-buk-missile",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "UA",
+        "NL",
+        "MY",
+        "AU"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.92,
+          "reasons": [
+            "narrative N03",
+            "cue: demands proof / 'no evidence' ('no evidence')"
+          ]
+        },
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/there-is-no-evidence-that-mh17-was-shot-by-a-russian-buk-missile/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--a7ad98de-884e-5ed0-966b-a81f1b5be887",
+      "name": "United Kingdom",
+      "country": "GB"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--37690705-f7a9-55b5-995d-fa2ccbf102d0",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--a7ad98de-884e-5ed0-966b-a81f1b5be887"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--e6eb4dc3-ae88-5fa6-a406-1633a3265ae3",
+      "name": "Sputnik Italia",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--9956215f-3902-5ebf-8a2a-edd964c12bf0",
+      "value": "https://euvsdisinfo.eu/report/russia-has-not-interfered-in-british-elections-nor-in-the-elections-of-any-country/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--444d1342-236f-5efe-8125-b80b72568a86",
+      "name": "Russia has not interfered in British elections nor in the elections of any country",
+      "description": "Russia has not interfered in British elections nor in the elections of any country. Russia rejects any allegation of involvement in election interference in the UK and in any country.",
+      "published": "2020-07-17T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 36,
+      "object_refs": [
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--43cd1d8d-45c5-5e05-8616-ce4da35e932b",
+        "location--a7ad98de-884e-5ed0-966b-a81f1b5be887",
+        "identity--e6eb4dc3-ae88-5fa6-a406-1633a3265ae3",
+        "url--9956215f-3902-5ebf-8a2a-edd964c12bf0",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "russia-has-not-interfered-in-british-elections-nor-in-the-elections-of-any-country",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.361
+        }
+      ],
+      "x_fimi_target_countries": [
+        "GB"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.54,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.49,
+          "reasons": [
+            "narrative N03"
+          ]
+        },
+        {
+          "technique_id": "T0068",
+          "name": "Respond to Breaking News Event or Active Crisis",
+          "tactic_id": "TA14",
+          "confidence": 0.45,
+          "reasons": [
+            "cue: exploits breaking news / crisis ('election')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/russia-has-not-interfered-in-british-elections-nor-in-the-elections-of-any-country/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--affb5cdd-d78f-548c-baa7-caf833c22b0a",
+      "name": "Latvia",
+      "country": "LV"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--c94a4318-41e1-5353-9e03-5caf93965337",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--affb5cdd-d78f-548c-baa7-caf833c22b0a"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--49724e4f-f7d3-5a61-9bcf-3355c288adcb",
+      "name": "Lithuania",
+      "country": "LT"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--2ecc6183-01c9-56cd-9f70-b20a059e1ea3",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--49724e4f-f7d3-5a61-9bcf-3355c288adcb"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--2d3baa74-4218-5593-b0d2-341455400c46",
+      "name": "Estonia",
+      "country": "EE"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--88684fec-9ed6-5f54-b1fa-03d67cd99b2b",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--2d3baa74-4218-5593-b0d2-341455400c46"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--61247625-0fe0-57db-8ce3-9828d78c733d",
+      "name": "izvestia.ru",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--9d0150a1-a2f3-5b5b-a601-70334336a73e",
+      "value": "https://euvsdisinfo.eu/report/latvia-lithuania-and-estonia-engage-in-political-censorship/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--27bd6f16-dc19-5698-97f6-4f64620a87ea",
+      "name": "Latvia, Lithuania and Estonia engage in political censorship",
+      "description": "The ban on broadcasting RT television channel Sputnik, in Latvia and Lithuania is a direct violation of the obligations of media freedom undertaken by the Baltic states. The Federation Council of Russia believes that such actions of Lithuania, Latvia and Estonia violate the principles of freedom of speech and unhindered dissemination of information, which are fundamental norms of the OSCE and the Council of Europe.",
+      "published": "2020-07-16T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Western media lies & censorship of 'alternative' voices"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--affb5cdd-d78f-548c-baa7-caf833c22b0a",
+        "location--49724e4f-f7d3-5a61-9bcf-3355c288adcb",
+        "location--2d3baa74-4218-5593-b0d2-341455400c46",
+        "identity--61247625-0fe0-57db-8ce3-9828d78c733d",
+        "url--9d0150a1-a2f3-5b5b-a601-70334336a73e",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "latvia-lithuania-and-estonia-engage-in-political-censorship",
+      "x_fimi_narratives": [
+        {
+          "id": "N16",
+          "name": "Western media lies & censorship of 'alternative' voices",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "LV",
+        "LT",
+        "EE"
+      ],
+      "x_fimi_target_orgs": [
+        "UN"
+      ],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N16 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N16"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/latvia-lithuania-and-estonia-engage-in-political-censorship/"
+        }
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--b65bc2c5-3faf-538b-8cb6-97bdb658595c",
+      "value": "https://euvsdisinfo.eu/report/there-is-no-evidence-that-russia-tried-to-influence-electoral-processes-in-great-britain/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--da844857-ef5f-5360-bd6f-325237795b65",
+      "name": "There is no evidence that Russia tried to influence electoral processes in Great Britain",
+      "description": "British officials and media have repeatedly accused Russia of interfering, in recent years, in British electoral processes, alleging that Russian trolls on social media have tried to conduct campaigns of “weaponised information” to influence potential voters. Moscow has repeatedly denied these accusations. Last year, after a lengthy investigation, Facebook concluded that there “is absolutely no evidence” that Russia influenced the 2016 vote on Brexit using this social network and even that Russia tried to interfere “in a significant way”.",
+      "published": "2020-07-16T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 94,
+      "object_refs": [
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--a7ad98de-884e-5ed0-966b-a81f1b5be887",
+        "identity--e6eb4dc3-ae88-5fa6-a406-1633a3265ae3",
+        "url--b65bc2c5-3faf-538b-8cb6-97bdb658595c",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "there-is-no-evidence-that-russia-tried-to-influence-electoral-processes-in-great-britain",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.938
+        }
+      ],
+      "x_fimi_target_countries": [
+        "GB"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.92,
+          "reasons": [
+            "narrative N03",
+            "cue: demands proof / 'no evidence' ('no evidence')"
+          ]
+        },
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/there-is-no-evidence-that-russia-tried-to-influence-electoral-processes-in-great-britain/"
+        }
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--68c015d1-484a-57c1-b1e3-6261ea7c35a3",
+      "value": "https://euvsdisinfo.eu/report/the-accusations-about-russian-sponsored-hacker-attacks-against-western-pharmaceutical-companies-aim-to-discredit-russias-anti-covid-vaccine/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--6aaf90f3-2348-5a75-8a6e-c49992ced494",
+      "name": "Accusations about Russian-sponsored hacker attacks aim to discredit Russia’s anti-COVID vaccine",
+      "description": "The accusations about Russian-sponsored hacker attacks against Western pharmaceutical companies aim to discredit Russia’s anti-COVID vaccine, which could become the first in the world. These accusations are an attempt to discredit the Russian vaccine by people who fear its success because Russia’s vaccine could potentially become the top vaccine in the market and the most effective one. These are typical accusations made without any evidence, and their timing should be noted. They were made just when it was announced that the Russian vaccine is scheduled to be approved in August by the regulatory authority.",
+      "published": "2020-07-16T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Biolabs, health & bioweapon conspiracies"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--e1ee6219-a24c-5cdc-824f-e48ef02e89aa",
+        "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--43cd1d8d-45c5-5e05-8616-ce4da35e932b",
+        "location--a7ad98de-884e-5ed0-966b-a81f1b5be887",
+        "identity--e6eb4dc3-ae88-5fa6-a406-1633a3265ae3",
+        "url--68c015d1-484a-57c1-b1e3-6261ea7c35a3",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "the-accusations-about-russian-sponsored-hacker-attacks-against-western-pharmaceutical-companies-aim-to-discredit-russias",
+      "x_fimi_narratives": [
+        {
+          "id": "N07",
+          "name": "Biolabs, health & bioweapon conspiracies",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "GB"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0078",
+          "name": "Dismay",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N07 -> objective 'dismay'"
+          ]
+        },
+        {
+          "technique_id": "T0022.001",
+          "name": "Amplify Existing Conspiracy Theory Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N07"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.7,
+          "reasons": [
+            "cue: demands proof / 'no evidence' ('without any evidence')"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0068",
+          "name": "Respond to Breaking News Event or Active Crisis",
+          "tactic_id": "TA14",
+          "confidence": 0.45,
+          "reasons": [
+            "cue: exploits breaking news / crisis ('COVID')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/the-accusations-about-russian-sponsored-hacker-attacks-against-western-pharmaceutical-companies-aim-to-discredit-russias-anti-covid-vaccine/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--8dd2ef65-a5e9-5e21-8a8e-e80a14a8400c",
+      "name": "Bulgaria",
+      "country": "BG"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--59ac08ea-2424-537f-ad00-e4f2a425fcda",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--8dd2ef65-a5e9-5e21-8a8e-e80a14a8400c"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--1c4f0ea1-bfc2-58c1-ae72-c526164f2628",
+      "name": "News Front - Bulgarian",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--315c4e82-cb03-50db-ad66-2fd0bd8f3e3f",
+      "value": "https://euvsdisinfo.eu/report/the-united-states-is-stopping-balkan-stream-because-of-the-political-instability-in-bulgaria/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--50baffe6-5f2d-5164-8957-bf0ceb73919c",
+      "name": "The United States is stopping Balkan Stream because of the political instability in Bulgaria",
+      "description": "The current political instability in Bulgaria is the reason for the sanctions imposed by the US towards all companies involved in the construction of “Balkan Stream”.",
+      "published": "2020-07-15T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Sanctions backfire & Western economic collapse"
+      ],
+      "confidence": 78,
+      "object_refs": [
+        "attack-pattern--e1ee6219-a24c-5cdc-824f-e48ef02e89aa",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "location--8dd2ef65-a5e9-5e21-8a8e-e80a14a8400c",
+        "identity--1c4f0ea1-bfc2-58c1-ae72-c526164f2628",
+        "url--315c4e82-cb03-50db-ad66-2fd0bd8f3e3f",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "the-united-states-is-stopping-balkan-stream-because-of-the-political-instability-in-bulgaria",
+      "x_fimi_narratives": [
+        {
+          "id": "N06",
+          "name": "Sanctions backfire & Western economic collapse",
+          "confidence": 0.784
+        }
+      ],
+      "x_fimi_target_countries": [
+        "US",
+        "BG"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0078",
+          "name": "Dismay",
+          "tactic_id": "TA02",
+          "confidence": 0.71,
+          "reasons": [
+            "narrative N06 -> objective 'dismay'"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/the-united-states-is-stopping-balkan-stream-because-of-the-political-instability-in-bulgaria/"
+        }
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--292cbecf-a709-5dd1-9e85-9bba00778396",
+      "value": "https://euvsdisinfo.eu/report/the-west-is-helping-to-destabilise-the-situation-in-belarus-before-the-election/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--723e5555-cff7-5050-a299-faf6127d03b5",
+      "name": "The West is helping to destabilise the situation in Belarus before the election",
+      "description": "The West has created in Belarus a whole system of social instruments that can destabilise the situation in the country on the eve of the presidential election. The West, of course, invests such money not without reason, but for a specific purpose. This goal is the preparation of a colour revolution.",
+      "published": "2020-07-13T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Colour revolutions & orchestrated protests"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--43cd1d8d-45c5-5e05-8616-ce4da35e932b",
+        "location--de07832f-0bad-5700-9d13-cd88c59e3a7f",
+        "identity--fe4c96fd-0e34-551f-9c4e-5c782bf89a57",
+        "url--292cbecf-a709-5dd1-9e85-9bba00778396",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "the-west-is-helping-to-destabilise-the-situation-in-belarus-before-the-election",
+      "x_fimi_narratives": [
+        {
+          "id": "N09",
+          "name": "Colour revolutions & orchestrated protests",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "BY"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N09 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0022.001",
+          "name": "Amplify Existing Conspiracy Theory Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N09"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0068",
+          "name": "Respond to Breaking News Event or Active Crisis",
+          "tactic_id": "TA14",
+          "confidence": 0.45,
+          "reasons": [
+            "cue: exploits breaking news / crisis ('election')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/the-west-is-helping-to-destabilise-the-situation-in-belarus-before-the-election/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--620527d6-c786-55d9-9455-7efb067f144b",
+      "name": "Sputnik Greece",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--15a1c550-dfd4-5cf5-a9ca-ea870c7bc3c9",
+      "value": "https://euvsdisinfo.eu/report/there-was-a-coup-d-etat-in-ukraine-in-2014/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--fe1e7cfb-c1a2-53e0-9467-06d41b36a114",
+      "name": "There was a coup d' etat in Ukraine in 2014",
+      "description": "Russian President Vladimir Putin said that the events in Crimea in 2014 were not the main reason for the deterioration in relations between Moscow and Washington. As he noted, there was first a coup d’ etat in Ukraine and a seizure of power. From that moment on, the views and the relations between Russia and the new Ukrainian leadership became diametrically opposed. Then, the United States under President Barack Obama imposed sanctions on Moscow after the events concerning the annexation of Crimea and bilateral relations worsened sharply.",
+      "published": "2020-07-12T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Ukraine as Nazi, illegitimate or failed state",
+        "narrative:'Civil war' in Ukraine & legitimacy of annexation"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--050feba9-2a8f-573b-b5f2-0d2dc2bd21a5",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "identity--620527d6-c786-55d9-9455-7efb067f144b",
+        "url--15a1c550-dfd4-5cf5-a9ca-ea870c7bc3c9",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "there-was-a-coup-d-etat-in-ukraine-in-2014",
+      "x_fimi_narratives": [
+        {
+          "id": "N02",
+          "name": "Ukraine as Nazi, illegitimate or failed state",
+          "confidence": 0.95
+        },
+        {
+          "id": "N15",
+          "name": "'Civil war' in Ukraine & legitimacy of annexation",
+          "confidence": 0.438
+        }
+      ],
+      "x_fimi_target_countries": [
+        "UA",
+        "US"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.91,
+          "reasons": [
+            "narrative N02 -> objective 'distort'",
+            "narrative N15 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0003",
+          "name": "Leverage Existing Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N02"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0023.001",
+          "name": "Reframe Context",
+          "tactic_id": "TA06",
+          "confidence": 0.53,
+          "reasons": [
+            "narrative N15"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/there-was-a-coup-d-etat-in-ukraine-in-2014/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--b274a7cc-9406-5fc4-b544-b3c3a765e383",
+      "name": "Lebanon",
+      "country": "LB"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--d4e6e9e3-0833-5a8d-8e29-141e6b91a58b",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--b274a7cc-9406-5fc4-b544-b3c3a765e383"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--605b4c59-0383-5bed-be0f-861ba157c1aa",
+      "value": "https://euvsdisinfo.eu/report/the-us-created-isis-and-terrorism-in-the-middle-east/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--63570438-4e43-595f-af34-1c4484f31b32",
+      "name": "The US created ISIS and terrorism in the Middle East",
+      "description": "The US created ISIS and terrorism in the Middle East",
+      "published": "2020-07-10T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:The West sponsors terrorism"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "location--bcc57f2a-f7dc-5e04-b221-36e991999389",
+        "location--b274a7cc-9406-5fc4-b544-b3c3a765e383",
+        "identity--e6eb4dc3-ae88-5fa6-a406-1633a3265ae3",
+        "url--605b4c59-0383-5bed-be0f-861ba157c1aa",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "the-us-created-isis-and-terrorism-in-the-middle-east",
+      "x_fimi_narratives": [
+        {
+          "id": "N17",
+          "name": "The West sponsors terrorism",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "US",
+        "SY",
+        "LB"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N17 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0003",
+          "name": "Leverage Existing Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N17"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/the-us-created-isis-and-terrorism-in-the-middle-east/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "attack-pattern",
+      "id": "attack-pattern--4ae9947b-11aa-5c5e-a519-253c6c248104",
+      "name": "Distract",
+      "external_references": [
+        {
+          "source_name": "DISARM",
+          "external_id": "T0077",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0077.md"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "disarm",
+          "phase_name": "plan-objectives"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--b4a99ef5-8769-505b-b667-e793e8c8ceb5",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "attack-pattern--4ae9947b-11aa-5c5e-a519-253c6c248104"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--6071e92c-f228-5307-8fb3-a8a340ec21c2",
+      "name": "60 minut @Rossiya 1 - YouTube",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--5b3aac10-c382-5a82-b3b2-eddd9501bf9c",
+      "value": "https://euvsdisinfo.eu/report/ukraine-is-embroiled-in-a-civil-war/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--03e4796c-c4ce-52a1-9f90-0d2ab2695aa9",
+      "name": "Ukraine is embroiled in a civil war",
+      "description": "Poroshenko is a hypocrite and a scumbag. He waged a nonexistent war in which people died. […] It is a civil conflict, not a war against Russia.",
+      "published": "2020-07-10T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:'Civil war' in Ukraine & legitimacy of annexation",
+        "narrative:Western aggression & NATO encirclement"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--050feba9-2a8f-573b-b5f2-0d2dc2bd21a5",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--4ae9947b-11aa-5c5e-a519-253c6c248104",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--c2a5e11f-45b9-5ded-a542-ff52dbdc9b40",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "identity--6071e92c-f228-5307-8fb3-a8a340ec21c2",
+        "url--5b3aac10-c382-5a82-b3b2-eddd9501bf9c",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "ukraine-is-embroiled-in-a-civil-war",
+      "x_fimi_narratives": [
+        {
+          "id": "N15",
+          "name": "'Civil war' in Ukraine & legitimacy of annexation",
+          "confidence": 0.95
+        },
+        {
+          "id": "N01",
+          "name": "Western aggression & NATO encirclement",
+          "confidence": 0.629
+        }
+      ],
+      "x_fimi_target_countries": [
+        "UA"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.92,
+          "reasons": [
+            "narrative N15 -> objective 'distort'",
+            "narrative N01 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0023.001",
+          "name": "Reframe Context",
+          "tactic_id": "TA06",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N15"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0077",
+          "name": "Distract",
+          "tactic_id": "TA02",
+          "confidence": 0.6,
+          "reasons": [
+            "cue: whataboutism ('hypocrite')"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0079",
+          "name": "Divide",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "cue: wedge / division language ('civil war')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/ukraine-is-embroiled-in-a-civil-war/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--20027949-701b-5f62-9119-98ac57199152",
+      "name": "Sputnik Spain",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--43b0b6d9-155f-580e-b21c-a96a4da38970",
+      "value": "https://euvsdisinfo.eu/report/constitutional-amendments-russophobia-west-not-like-strong-russia/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--00e29a5d-7492-56e0-8ede-d7276cef094b",
+      "name": "Constitutional amendments unleashed Russophobia because the West doesn’t like a strong Russia",
+      "description": "The West doesn’t like a strong and firm Russia, which is not convenient for its interests. That’s why the Russophobia unleashed in face of the recent referendum on Constitutional amendments aims to discredit Russia in the eyes of the international community and to generate disconformity and internal breaches. Hegemonic mainstream media, some political institutes and NGOs used every mean at hand to express their rejection of Russia’s democratic procedure. They even tried to deter Russian voters from taking part in the voting.",
+      "published": "2020-07-10T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Russophobia & Russia as victim"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--c2a5e11f-45b9-5ded-a542-ff52dbdc9b40",
+        "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "identity--20027949-701b-5f62-9119-98ac57199152",
+        "url--43b0b6d9-155f-580e-b21c-a96a4da38970",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "constitutional-amendments-russophobia-west-not-like-strong-russia",
+      "x_fimi_narratives": [
+        {
+          "id": "N12",
+          "name": "Russophobia & Russia as victim",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0079",
+          "name": "Divide",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N12 -> objective 'divide'"
+          ]
+        },
+        {
+          "technique_id": "T0003",
+          "name": "Leverage Existing Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N12"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/constitutional-amendments-russophobia-west-not-like-strong-russia/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--ae6bc9d1-be99-5ee2-819b-0621aa30d955",
+      "name": "Sputnik Belarus - Russian",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--5b391dd3-3afc-52aa-afbb-3efa6125619e",
+      "name": "ria.ru",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--528ebbe1-7c27-52ba-8db2-64643581dfa4",
+      "value": "https://euvsdisinfo.eu/report/allegations-about-russias-implication-in-skripal-poisoning-and-mh17-downing-work-only-for-anti-russian-audiences/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--6387ab36-5779-5db8-9ff0-8647aac991a9",
+      "name": "Allegations about Kiselyov-controlled RT, Russia's implication in Skripal poisoning and MH17 downing work only for anti-Russian audiences",
+      "description": "Lithuania has banned the broadcasting of five RT TV channels on its territory, following Latvia’s analogous decision. The decision claims that RT is controlled by Dmitry Kiselyov, whereas, in reality, RT has nothing to do with news agency Rossiya Segodnia chaired by him. Allegations about Kiselyov-controlled RT, Skripal poisoned by Vladimir Putin and MH17 downing by Kremlin are fine for anti-Russian audiences. The West increasingly sees no reason to waste its resources on Russia and the forces that sympathize with Russia, apparently considering it as hopeless to persuade and attract them on its side. This sloppy approach was the product of West’s monopoly in information, political, and ideological spheres. It is because of this monopoly that at a certain stage the West ceased to consider it necessary to rigorously and professionally elaborate its policies on a general level, but also in what concerns its competitors. As a result, the West did not notice how it lost the monopoly because of the loss of competences.",
+      "published": "2020-07-10T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility",
+        "narrative:Russophobia & Russia as victim"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--c2a5e11f-45b9-5ded-a542-ff52dbdc9b40",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--4f0c6fe0-86b3-57f6-a2cc-d13241121e43",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--2b00e3ff-7868-5f2d-82e9-f864866fd4c9",
+        "location--affb5cdd-d78f-548c-baa7-caf833c22b0a",
+        "identity--ae6bc9d1-be99-5ee2-819b-0621aa30d955",
+        "identity--5b391dd3-3afc-52aa-afbb-3efa6125619e",
+        "url--528ebbe1-7c27-52ba-8db2-64643581dfa4",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "allegations-about-russias-implication-in-skripal-poisoning-and-mh17-downing-work-only-for-anti-russian-audiences",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.95
+        },
+        {
+          "id": "N12",
+          "name": "Russophobia & Russia as victim",
+          "confidence": 0.948
+        }
+      ],
+      "x_fimi_target_countries": [
+        "LV"
+      ],
+      "x_fimi_target_orgs": [],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0079",
+          "name": "Divide",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N12 -> objective 'divide'"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N03"
+          ]
+        },
+        {
+          "technique_id": "T0003",
+          "name": "Leverage Existing Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N12"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0022.001",
+          "name": "Amplify Existing Conspiracy Theory Narratives",
+          "tactic_id": "TA14",
+          "confidence": 0.55,
+          "reasons": [
+            "cue: hidden-plot framing ('controlled by')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/allegations-about-russias-implication-in-skripal-poisoning-and-mh17-downing-work-only-for-anti-russian-audiences/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "location",
+      "id": "location--f4c7f7ca-9b4b-571f-bd28-1a2d7d43c85a",
+      "name": "Romania",
+      "country": "RO"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "relationship",
+      "id": "relationship--6d886dc1-8a7f-5c46-9d47-7d5c4c77d8c8",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1",
+      "target_ref": "location--f4c7f7ca-9b4b-571f-bd28-1a2d7d43c85a"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--bb8f584e-78d3-57a6-86c4-4c84e81d3fa4",
+      "name": "flux.md",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--e2289deb-96de-5492-b0b9-353fe8e54e55",
+      "value": "https://euvsdisinfo.eu/report/the-location-of-the-nato-military-base-in-romania-aims-to-discourage-russia/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--608347ef-fcbf-59cd-91da-c04deae17f94",
+      "name": "The location of the NATO military base in Romania aims to discourage Russia",
+      "description": "In fact, has anyone ever asked Romanians if they agreed for Romania to become a NATO military base? And beware – NOT any NATO base, but one to… discourage Russia!",
+      "published": "2020-07-10T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Western aggression & NATO encirclement"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--80c4284f-3c9b-546d-ac0f-388f208c4c0f",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "location--f4c7f7ca-9b4b-571f-bd28-1a2d7d43c85a",
+        "location--fd57e6c8-340d-5f5b-901e-4bf1d7b278c0",
+        "identity--bb8f584e-78d3-57a6-86c4-4c84e81d3fa4",
+        "url--e2289deb-96de-5492-b0b9-353fe8e54e55",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "the-location-of-the-nato-military-base-in-romania-aims-to-discourage-russia",
+      "x_fimi_narratives": [
+        {
+          "id": "N01",
+          "name": "Western aggression & NATO encirclement",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "RO",
+        "US"
+      ],
+      "x_fimi_target_orgs": [
+        "NATO"
+      ],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0076",
+          "name": "Distort",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N01 -> objective 'distort'"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/the-location-of-the-nato-military-base-in-romania-aims-to-discourage-russia/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "identity",
+      "id": "identity--214e2463-caed-56da-9007-dda902a1d0fe",
+      "name": "nahnews.org",
+      "identity_class": "organization",
+      "description": "Media outlet (as listed by EUvsDisinfo)"
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--2ece910c-b1c9-57b5-a027-228e2b25d920",
+      "value": "https://euvsdisinfo.eu/report/mh17-the-netherlands-is-staging-a-provocation-against-russia-in-the-echr/"
+    },
+    {
+      "spec_version": "2.1",
+      "created": "2026-10-07T00:00:00.000Z",
+      "modified": "2026-10-07T00:00:00.000Z",
+      "created_by_ref": "identity--c0c1825b-2392-5705-9534-645d8bd3b5a6",
+      "type": "report",
+      "id": "report--fe0a923e-4329-533d-bbad-d75af124898f",
+      "name": "MH17: The Netherlands is staging a provocation against Russia in the ECHR",
+      "description": "Although the evidence shows that Ukraine is guilty [in the crash of MH17], the circus continues. That is, six years after the disaster, the Netherlands decided to file a petition with the ECHR, using an openly contrived pretext to arrange a provocation in court using fake data. In any case, as long as the Russian Federation is the “main suspect” because the West has decided so, it is Russia that will bear all the lawsuits, and not Ukraine, the real culprit of the tragedy.",
+      "published": "2020-07-10T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "fimi",
+        "disinformation",
+        "narrative:Denial of Russian responsibility"
+      ],
+      "confidence": 95,
+      "object_refs": [
+        "attack-pattern--999f7974-d464-5efb-9bb8-7d748106279a",
+        "attack-pattern--d38f5205-ba67-5411-bc47-ea7b79b6346c",
+        "attack-pattern--d2810a2a-1e03-5b48-825b-eff4d519c7de",
+        "attack-pattern--e1ee6219-a24c-5cdc-824f-e48ef02e89aa",
+        "attack-pattern--afafacde-283c-592d-aa47-4279cedd6c80",
+        "attack-pattern--43cd1d8d-45c5-5e05-8616-ce4da35e932b",
+        "location--33c98140-fa80-5a34-a55a-9e11f09d5d9c",
+        "location--46201d73-2a8a-5587-8e78-c73c90a9610f",
+        "location--3209419e-587a-5a89-a9d1-3c911f3fafe0",
+        "identity--214e2463-caed-56da-9007-dda902a1d0fe",
+        "url--2ece910c-b1c9-57b5-a027-228e2b25d920",
+        "threat-actor--14c1a400-dbe2-52bd-acd5-0ff88a7713a1"
+      ],
+      "x_fimi_case_id": "mh17-the-netherlands-is-staging-a-provocation-against-russia-in-the-echr",
+      "x_fimi_narratives": [
+        {
+          "id": "N03",
+          "name": "Denial of Russian responsibility",
+          "confidence": 0.95
+        }
+      ],
+      "x_fimi_target_countries": [
+        "NL",
+        "UA",
+        "MY"
+      ],
+      "x_fimi_target_orgs": [
+        "EU"
+      ],
+      "x_fimi_disarm": [
+        {
+          "technique_id": "T0075",
+          "name": "Dismiss",
+          "tactic_id": "TA02",
+          "confidence": 0.78,
+          "reasons": [
+            "narrative N03 -> objective 'dismiss'"
+          ]
+        },
+        {
+          "technique_id": "T0040",
+          "name": "Demand Insurmountable Proof",
+          "tactic_id": "TA14",
+          "confidence": 0.73,
+          "reasons": [
+            "narrative N03"
+          ]
+        },
+        {
+          "technique_id": "T0023",
+          "name": "Distort Facts",
+          "tactic_id": "TA06",
+          "confidence": 0.6,
+          "reasons": [
+            "baseline: case debunked by EUvsDisinfo"
+          ]
+        },
+        {
+          "technique_id": "T0078",
+          "name": "Dismay",
+          "tactic_id": "TA02",
+          "confidence": 0.55,
+          "reasons": [
+            "cue: fear / dismay language ('disaster')"
+          ]
+        },
+        {
+          "technique_id": "T0002",
+          "name": "Facilitate State Propaganda",
+          "tactic_id": "TA02",
+          "confidence": 0.5,
+          "reasons": [
+            "baseline: pro-Kremlin state-aligned media ecosystem"
+          ]
+        },
+        {
+          "technique_id": "T0068",
+          "name": "Respond to Breaking News Event or Active Crisis",
+          "tactic_id": "TA14",
+          "confidence": 0.45,
+          "reasons": [
+            "cue: exploits breaking news / crisis ('crash')"
+          ]
+        }
+      ],
+      "external_references": [
+        {
+          "source_name": "EUvsDisinfo",
+          "url": "https://euvsdisinfo.eu/report/mh17-the-netherlands-is-staging-a-provocation-against-russia-in-the-echr/"
+        }
+      ]
+    }
+  ]
+}

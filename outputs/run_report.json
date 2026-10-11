@@ -1,0 +1,502 @@
+{
+  "generated_at": "2026-10-07T20:07:16+00:00",
+  "n_cases": 9071,
+  "date_range": [
+    "2015-01-06 00:00:00+00:00",
+    "2020-07-20 00:00:00+00:00"
+  ],
+  "share_classified": 0.602,
+  "silver_label_cv_metrics": {
+    "N01": {
+      "narrative": "Western aggression & NATO encirclement",
+      "silver_positives": 763,
+      "precision": 0.798,
+      "recall": 0.938,
+      "f1": 0.863
+    },
+    "N02": {
+      "narrative": "Ukraine as Nazi, illegitimate or failed state",
+      "silver_positives": 639,
+      "precision": 0.781,
+      "recall": 0.917,
+      "f1": 0.844
+    },
+    "N03": {
+      "narrative": "Denial of Russian responsibility",
+      "silver_positives": 707,
+      "precision": 0.773,
+      "recall": 0.911,
+      "f1": 0.836
+    },
+    "N04": {
+      "narrative": "Western decline & moral decay",
+      "silver_positives": 112,
+      "precision": 0.651,
+      "recall": 0.634,
+      "f1": 0.643
+    },
+    "N05": {
+      "narrative": "EU disintegration & dysfunction",
+      "silver_positives": 93,
+      "precision": 0.638,
+      "recall": 0.645,
+      "f1": 0.642
+    },
+    "N06": {
+      "narrative": "Sanctions backfire & Western economic collapse",
+      "silver_positives": 253,
+      "precision": 0.726,
+      "recall": 0.858,
+      "f1": 0.786
+    },
+    "N07": {
+      "narrative": "Biolabs, health & bioweapon conspiracies",
+      "silver_positives": 524,
+      "precision": 0.904,
+      "recall": 0.952,
+      "f1": 0.928
+    },
+    "N08": {
+      "narrative": "Global elites & hidden puppet masters",
+      "silver_positives": 227,
+      "precision": 0.779,
+      "recall": 0.806,
+      "f1": 0.792
+    },
+    "N09": {
+      "narrative": "Colour revolutions & orchestrated protests",
+      "silver_positives": 235,
+      "precision": 0.721,
+      "recall": 0.749,
+      "f1": 0.735
+    },
+    "N10": {
+      "narrative": "Historical revisionism",
+      "silver_positives": 383,
+      "precision": 0.743,
+      "recall": 0.906,
+      "f1": 0.816
+    },
+    "N11": {
+      "narrative": "Western aid to Ukraine wasted or stolen",
+      "silver_positives": 39,
+      "precision": 0.84,
+      "recall": 0.538,
+      "f1": 0.656
+    },
+    "N12": {
+      "narrative": "Russophobia & Russia as victim",
+      "silver_positives": 365,
+      "precision": 0.707,
+      "recall": 0.879,
+      "f1": 0.784
+    },
+    "N13": {
+      "narrative": "Nuclear & escalation threats",
+      "silver_positives": 125,
+      "precision": 0.733,
+      "recall": 0.792,
+      "f1": 0.762
+    },
+    "N14": {
+      "narrative": "Migration as a threat",
+      "silver_positives": 246,
+      "precision": 0.786,
+      "recall": 0.882,
+      "f1": 0.831
+    },
+    "N15": {
+      "narrative": "'Civil war' in Ukraine & legitimacy of annexation",
+      "silver_positives": 451,
+      "precision": 0.683,
+      "recall": 0.874,
+      "f1": 0.767
+    },
+    "N16": {
+      "narrative": "Western media lies & censorship of 'alternative' voices",
+      "silver_positives": 187,
+      "precision": 0.671,
+      "recall": 0.872,
+      "f1": 0.758
+    },
+    "N17": {
+      "narrative": "The West sponsors terrorism",
+      "silver_positives": 452,
+      "precision": 0.799,
+      "recall": 0.916,
+      "f1": 0.854
+    }
+  },
+  "topics": [
+    {
+      "topic": 0,
+      "label": "states · poland · united",
+      "top_terms": [
+        "states",
+        "poland",
+        "united",
+        "baltic",
+        "united states",
+        "baltic states",
+        "soviet",
+        "polish",
+        "germany",
+        "ussr"
+      ],
+      "n_cases": 492
+    },
+    {
+      "topic": 1,
+      "label": "ukraine · coup · country",
+      "top_terms": [
+        "ukraine",
+        "coup",
+        "country",
+        "kyiv",
+        "2014",
+        "coup ukraine",
+        "ukraine russia",
+        "ukrainians",
+        "nazis",
+        "regime"
+      ],
+      "n_cases": 1187
+    },
+    {
+      "topic": 2,
+      "label": "chemical · white · white helmets",
+      "top_terms": [
+        "chemical",
+        "white",
+        "white helmets",
+        "helmets",
+        "attack",
+        "syria",
+        "chemical attack",
+        "chemical weapons",
+        "douma",
+        "weapons"
+      ],
+      "n_cases": 510
+    },
+    {
+      "topic": 3,
+      "label": "russia · west · sanctions",
+      "top_terms": [
+        "russia",
+        "west",
+        "sanctions",
+        "belarus",
+        "western",
+        "sanctions russia",
+        "war russia",
+        "relations",
+        "russia west",
+        "belarusian"
+      ],
+      "n_cases": 1043
+    },
+    {
+      "topic": 4,
+      "label": "week trend · trend · week",
+      "top_terms": [
+        "week trend",
+        "trend",
+        "week",
+        "isis",
+        "turkey",
+        "oil",
+        "trend turkey",
+        "turkish",
+        "usa",
+        "trend ukraine"
+      ],
+      "n_cases": 177
+    },
+    {
+      "topic": 5,
+      "label": "russian · anti · anti russian",
+      "top_terms": [
+        "russian",
+        "anti",
+        "anti russian",
+        "mh17",
+        "evidence",
+        "investigation",
+        "media",
+        "skripal",
+        "elections",
+        "case"
+      ],
+      "n_cases": 946
+    },
+    {
+      "topic": 6,
+      "label": "eu · european · union",
+      "top_terms": [
+        "eu",
+        "european",
+        "union",
+        "european union",
+        "europe",
+        "countries",
+        "parliament",
+        "european parliament",
+        "czech",
+        "sanctions"
+      ],
+      "n_cases": 993
+    },
+    {
+      "topic": 7,
+      "label": "nato · military · alliance",
+      "top_terms": [
+        "nato",
+        "military",
+        "alliance",
+        "russia nato",
+        "georgia",
+        "threat",
+        "preparing",
+        "nato preparing",
+        "nato military",
+        "security"
+      ],
+      "n_cases": 685
+    },
+    {
+      "topic": 8,
+      "label": "coronavirus · china · covid",
+      "top_terms": [
+        "coronavirus",
+        "china",
+        "covid",
+        "19",
+        "covid 19",
+        "virus",
+        "biological",
+        "people",
+        "pandemic",
+        "world"
+      ],
+      "n_cases": 1125
+    },
+    {
+      "topic": 9,
+      "label": "crimea · referendum · 2014",
+      "top_terms": [
+        "crimea",
+        "referendum",
+        "2014",
+        "crimea russia",
+        "crimean",
+        "peninsula",
+        "russia",
+        "crimea russian",
+        "march",
+        "march 2014"
+      ],
+      "n_cases": 412
+    },
+    {
+      "topic": 10,
+      "label": "war · civil war · civil",
+      "top_terms": [
+        "war",
+        "civil war",
+        "civil",
+        "war ukraine",
+        "war russia",
+        "world",
+        "world war",
+        "ukraine civil",
+        "donbas",
+        "war donbas"
+      ],
+      "n_cases": 436
+    },
+    {
+      "topic": 11,
+      "label": "ukrainian · poroshenko · donbas",
+      "top_terms": [
+        "ukrainian",
+        "poroshenko",
+        "donbas",
+        "president",
+        "army",
+        "petro",
+        "petro poroshenko",
+        "ukrainian army",
+        "authorities",
+        "ukrainian authorities"
+      ],
+      "n_cases": 1065
+    }
+  ],
+  "stix2_library_used": false,
+  "evaluation_vs_tags": [
+    {
+      "narrative_id": "N01",
+      "narrative": "Western aggression & NATO encirclement",
+      "tagged_cases": 1316,
+      "weak_precision": 0.83,
+      "weak_recall": 0.551,
+      "weak_f1": 0.662,
+      "supervised_f1": 0.764
+    },
+    {
+      "narrative_id": "N02",
+      "narrative": "Ukraine as Nazi, illegitimate or failed state",
+      "tagged_cases": 1258,
+      "weak_precision": 0.819,
+      "weak_recall": 0.495,
+      "weak_f1": 0.617,
+      "supervised_f1": 0.717
+    },
+    {
+      "narrative_id": "N03",
+      "narrative": "Denial of Russian responsibility",
+      "tagged_cases": 1003,
+      "weak_precision": 0.803,
+      "weak_recall": 0.663,
+      "weak_f1": 0.726,
+      "supervised_f1": 0.848
+    },
+    {
+      "narrative_id": "N04",
+      "narrative": "Western decline & moral decay",
+      "tagged_cases": 303,
+      "weak_precision": 0.827,
+      "weak_recall": 0.38,
+      "weak_f1": 0.52,
+      "supervised_f1": 0.638
+    },
+    {
+      "narrative_id": "N05",
+      "narrative": "EU disintegration & dysfunction",
+      "tagged_cases": 193,
+      "weak_precision": 0.565,
+      "weak_recall": 0.337,
+      "weak_f1": 0.422,
+      "supervised_f1": 0.554
+    },
+    {
+      "narrative_id": "N06",
+      "narrative": "Sanctions backfire & Western economic collapse",
+      "tagged_cases": 483,
+      "weak_precision": 0.705,
+      "weak_recall": 0.441,
+      "weak_f1": 0.543,
+      "supervised_f1": 0.658
+    },
+    {
+      "narrative_id": "N07",
+      "narrative": "Biolabs, health & bioweapon conspiracies",
+      "tagged_cases": 625,
+      "weak_precision": 0.918,
+      "weak_recall": 0.822,
+      "weak_f1": 0.868,
+      "supervised_f1": 0.892
+    },
+    {
+      "narrative_id": "N08",
+      "narrative": "Global elites & hidden puppet masters",
+      "tagged_cases": 402,
+      "weak_precision": 0.809,
+      "weak_recall": 0.517,
+      "weak_f1": 0.631,
+      "supervised_f1": 0.658
+    },
+    {
+      "narrative_id": "N09",
+      "narrative": "Colour revolutions & orchestrated protests",
+      "tagged_cases": 431,
+      "weak_precision": 0.47,
+      "weak_recall": 0.304,
+      "weak_f1": 0.369,
+      "supervised_f1": 0.593
+    },
+    {
+      "narrative_id": "N10",
+      "narrative": "Historical revisionism",
+      "tagged_cases": 449,
+      "weak_precision": 0.703,
+      "weak_recall": 0.724,
+      "weak_f1": 0.714,
+      "supervised_f1": 0.797
+    },
+    {
+      "narrative_id": "N12",
+      "narrative": "Russophobia & Russia as victim",
+      "tagged_cases": 1037,
+      "weak_precision": 0.856,
+      "weak_recall": 0.366,
+      "weak_f1": 0.513,
+      "supervised_f1": 0.608
+    },
+    {
+      "narrative_id": "N13",
+      "narrative": "Nuclear & escalation threats",
+      "tagged_cases": 165,
+      "weak_precision": 0.675,
+      "weak_recall": 0.618,
+      "weak_f1": 0.646,
+      "supervised_f1": 0.695
+    },
+    {
+      "narrative_id": "N14",
+      "narrative": "Migration as a threat",
+      "tagged_cases": 394,
+      "weak_precision": 0.853,
+      "weak_recall": 0.632,
+      "weak_f1": 0.726,
+      "supervised_f1": 0.818
+    },
+    {
+      "narrative_id": "N15",
+      "narrative": "'Civil war' in Ukraine & legitimacy of annexation",
+      "tagged_cases": 738,
+      "weak_precision": 0.663,
+      "weak_recall": 0.511,
+      "weak_f1": 0.577,
+      "supervised_f1": 0.779
+    },
+    {
+      "narrative_id": "N16",
+      "narrative": "Western media lies & censorship of 'alternative' voices",
+      "tagged_cases": 475,
+      "weak_precision": 0.751,
+      "weak_recall": 0.368,
+      "weak_f1": 0.494,
+      "supervised_f1": 0.61
+    },
+    {
+      "narrative_id": "N17",
+      "narrative": "The West sponsors terrorism",
+      "tagged_cases": 600,
+      "weak_precision": 0.844,
+      "weak_recall": 0.73,
+      "weak_f1": 0.783,
+      "supervised_f1": 0.807
+    },
+    {
+      "narrative_id": "macro",
+      "narrative": "Macro average",
+      "tagged_cases": 9872,
+      "weak_precision": 0.756,
+      "weak_recall": 0.529,
+      "weak_f1": 0.613,
+      "supervised_f1": 0.715
+    },
+    {
+      "narrative_id": "weighted",
+      "narrative": "Support-weighted average",
+      "tagged_cases": 9872,
+      "weak_precision": 0.783,
+      "weak_recall": 0.537,
+      "weak_f1": 0.629,
+      "supervised_f1": 0.732
+    }
+  ],
+  "stix_objects": 23050
+}

@@ -1,0 +1,19 @@
+narrative_id,narrative,tagged_cases,weak_precision,weak_recall,weak_f1,supervised_f1
+N01,Western aggression & NATO encirclement,1316,0.83,0.551,0.662,0.764
+N02,"Ukraine as Nazi, illegitimate or failed state",1258,0.819,0.495,0.617,0.717
+N03,Denial of Russian responsibility,1003,0.803,0.663,0.726,0.848
+N04,Western decline & moral decay,303,0.827,0.38,0.52,0.638
+N05,EU disintegration & dysfunction,193,0.565,0.337,0.422,0.554
+N06,Sanctions backfire & Western economic collapse,483,0.705,0.441,0.543,0.658
+N07,"Biolabs, health & bioweapon conspiracies",625,0.918,0.822,0.868,0.892
+N08,Global elites & hidden puppet masters,402,0.809,0.517,0.631,0.658
+N09,Colour revolutions & orchestrated protests,431,0.47,0.304,0.369,0.593
+N10,Historical revisionism,449,0.703,0.724,0.714,0.797
+N12,Russophobia & Russia as victim,1037,0.856,0.366,0.513,0.608
+N13,Nuclear & escalation threats,165,0.675,0.618,0.646,0.695
+N14,Migration as a threat,394,0.853,0.632,0.726,0.818
+N15,'Civil war' in Ukraine & legitimacy of annexation,738,0.663,0.511,0.577,0.779
+N16,Western media lies & censorship of 'alternative' voices,475,0.751,0.368,0.494,0.61
+N17,The West sponsors terrorism,600,0.844,0.73,0.783,0.807
+macro,Macro average,9872,0.756,0.529,0.613,0.715
+weighted,Support-weighted average,9872,0.783,0.537,0.629,0.732
